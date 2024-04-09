@@ -1,0 +1,104 @@
+.datathumbnail {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex;
+
+    @media  (max-width: $mantine-breakpoint-md) {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.minivisualisation {
+    width: 45px;
+    height: 40px;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+    }
+}
+
+.linegraph {
+    width: 37px;
+    height: 40px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.graphborder {
+    width: 37px;
+    height: 0;
+    border: 1.50px #D0444B solid;
+}
+
+.lineplots {
+    width: 34.82px;
+    height: 23.56px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.dataDiv {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    display: flex;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        display: inline-flex;
+        width: fit-content;
+    }
+}
+
+.dataItem {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: row;
+    
+    }
+}
+.dataLabel {
+    width: 25px;
+    text-align: center;
+    color: #BABCBD;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 9px;
+    word-wrap: break-word;
+}
+
+
+.dataPoint {
+    text-align: center;
+    color: #153441;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 8px;
+    word-wrap: break-word;
+  }
