@@ -1,4 +1,4 @@
-import { Group, Paper, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
+import { Button, Group, Paper, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
 import { 
     IconTopologyStarRing3, 
     IconChartLine, 
@@ -54,15 +54,20 @@ export function StatsGrid() {
     );
   });
   stats.push(
-    <Paper withBorder p="md" radius="md" key="cta">
-    <Text
-      variant="gradient"
-      gradient={{ from: 'pink', to: 'yellow' }}
-    >Connect from 800+ locations worldwide</Text>
-    </Paper>
+      <Paper withBorder p="md" radius="md" key="cta" style={{ position: 'relative' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+          <Text
+            variant="gradient"
+            gradient={{ from: 'pink', to: 'yellow' }}
+          >
+            Connect from 800+ locations worldwide
+          </Text>
+          <Button>Get Started</Button>
+        </div>
+      </Paper>
   );
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{ display: 'inline-block' }}>
       <SimpleGrid cols={{ base: 1, xs: 2, md: 4 }}>{stats}</SimpleGrid>
     </div>
   );
