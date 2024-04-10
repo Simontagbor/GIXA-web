@@ -8,21 +8,21 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A{' '}
+              The Gateway to{' '}
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow' }}
               >
-                fully featured
+                Internet Exchange
               </Text>{' '}
-              React components library
+                in Ghana
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease – Mantine includes more
-              than 100 customizable components and hooks to cover you in any situation
+            GIX facilitates seamless traffic exchange among local Internet Service Providers and Network Operators, 
+            bolstering connectivity and enhancing services for their clientele.
             </Text>
 
             <Button
